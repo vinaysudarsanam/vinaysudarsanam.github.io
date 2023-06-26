@@ -10,3 +10,8 @@ document.getElementById('contactme').addEventListener('click', function() {
   document.getElementById("linkedin").addEventListener("click", function() {
     window.open("https://www.linkedin.com/in/vinay-sudarsanam-182696169/", '_blank');
   });
+
+  document.getElementById('home').addEventListener('click', function() {
+    // Redirect to the home page
+    window.location.href = 'index.html';
+  });
