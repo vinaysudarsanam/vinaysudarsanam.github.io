@@ -16,15 +16,15 @@ nameButton.addEventListener('click', handleNameClick)
 function handleHomeClick() {
     window.location.href = "index.html";
 }
-
+// Projects page 
 function handleProjectsClick() {
     window.location.href = "projects.html";
 }
-
+// Linkedin Link 
 function handleLinkedinClick() {
     window.open("https://www.linkedin.com/in/vinay-sudarsanam-182696169/", '_blank');
 }
-
+// Email 
 function handleContactClick() {
   var mailtoLink = 'mailto:vinay.sudarsanam.2004@gmail.com';
   window.open(mailtoLink);
