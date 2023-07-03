@@ -1,50 +1,63 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Personal Website</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Sudarsanam</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="buttons">
-    <button id="home">Home</button>
-    <button id="projects">Projects</button>
-    <button id="linkedin">LinkedIn</button>
-    <button id="contactme">Contact Me</button>
-  </div>
-
-  <div id="container-projects">
-    <div id="project-section">
-      <h2>Thrive Together, NC</h2>
-      <div class="project">
-        <img src="project1.png" alt="Project 1 Image" class="project-image">
-        <p class="project-description">This is the description of Project 1.</p>
-      </div>
+    <div class="nav-container">
+        <div class="header">
+            <button id="name-button">Vinay Sudarsanam</button>
+        </div>
+        <div class="top-buttons">
+            <button id = 'home-button'>Home</button>
+            <button id = 'projects-button'>Projects</button>
+            <button id = 'linkedin-button'>LinkedIn</button>
+            <button id = 'contact-button'>Contact Me</button>
+        </div>
     </div>
 
-    <div id="project-section">
-      <h2>UNC Kidney Center Researcher</h2>
-      <div class="project">
-        <img src="project2.png" alt="Project 2 Image" class="project-image">
-        <p class="project-description">This is the description of Project 2.</p>
-      </div>
-    </div>
+    <div class="project-container">
+        <div class="project">
+            <img src="project1.png" alt="Error: Image Failed to Load" width="40%">
+            <div class="project-description">
+                <h3>Thrive Together, NC.</h3>
+                <p>Text Description.</p>
+                <a href="https://www.linkedin.com/in/vinay-sudarsanam-182696169/"target="_blank">View Code</a> <!-- Add link to the code here -->
+            </div>
+        </div>
 
-    <div id="project-section">
-      <h2>Health in Perspective</h2>
-      <div class="project">
-        <img src="project3.png" alt="Project 3 Image" class="project-image">
-        <p class="project-description">This is the description of Project 3.</p>
-      </div>
-    </div>
+        <div class="project">
+            <img src="PersonalWebsite.png" alt="Error: Image Failed to Load" width="65%">
+            <div class="project-description">
+                <h3>UNC Kidney Center, PRC Lab</h3>
+                <p>Webpage hosted by GitHub Pages that displays my personal portfolio. Built entirely from scratch with HTML, CSS, and JavaScript.</p>
+                <a href="https://www.linkedin.com/in/vinay-sudarsanam-182696169/"target="_blank">View Code</a> <!-- Add link to the code here -->
+            </div>
+        </div>
 
-    <div id="project-section">
-      <h2>UNC REX Healthcare</h2>
-      <div class="project">
-        <img src="project5.png" alt="Project 5 Image" class="project-image">
-        <p class="project-description">This is the description of Project 5.</p>
-      </div>
+        <div class="project">
+            <img src="MultilayerPerceptron.png" alt="Error: Image Failed to Load" width="70%">
+            <div class="project-description">
+                <h3>Health in Perspective</h3>
+                <p>A 4-layer linear neural network capable of classifying images, written from scratch in Java. Equipped with a command-line interface and backpropagation algorithm for training.</p>
+                <a href="https://www.linkedin.com/in/vinay-sudarsanam-182696169/"target="_blank">View Code</a> <!-- Add link to the code here -->
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="Compiler.png" alt="Error: Image Failed to Load" width = 67%>
+            <div class="project-description">
+                <h3>UNC REX Healthcare</h3>
+                <p>Converts Pascal code to MIPS Assembly. Handles loops, functions, variables, conditionals, and more. Constructed in Java using a scanner, parser, abstract syntax tree, variable environment, and code emitter.</p>
+                <a href="https://www.linkedin.com/in/vinay-sudarsanam-182696169/"target="_blank">View Code</a> <!-- Add link to the code here -->
+            </div>
+        </div>
     </div>
-  </div>
+      
+    <script src="script.js"></script>
 </body>
 </html>
