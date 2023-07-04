@@ -170,3 +170,12 @@ h3 {
     display: block;
     margin: 0 auto;
   }
+
+
+  .header-text {
+    font-size: 30px;
+}
+
+.description p {
+    font-size: 17px;
+}
