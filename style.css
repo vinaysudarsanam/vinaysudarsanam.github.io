@@ -42,7 +42,7 @@ h4 {
   
   /* Add hover style for when the box is tapped */
   .description-box:hover {
-    box-shadow: 0 0 30px rgba(75, 156, 211, 0.7);
+    box-shadow: 0 0 5px rgba(75, 156, 211, 0.7);
   }
 
 .nav-container {
@@ -111,7 +111,7 @@ h4 {
 
 .project {
     box-sizing: border-box;
-    border: 2px solid #4B9CD3;
+    border: 7px solid #4B9CD3;
     border-radius: 25px;
     margin: 2%;
     width: 500px;
@@ -132,9 +132,11 @@ h4 {
 }
 
 .project-description {
+    text-align: center;
     padding: 10%;
-}
 
+}
+  
 h3 {
     text-align: center;
     color: #333;
@@ -142,3 +144,29 @@ h3 {
     font-size: 1.25em;
     margin-top: 0em;
 }
+
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4B9CD3;
+    color: #FFFFFF;
+    border: 2px solid #4B9CD3;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .project-button:hover {
+    background-color: #37749F;
+    border-color: #37749F;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+  .center-image {
+    display: block;
+    margin: 0 auto;
+  }
