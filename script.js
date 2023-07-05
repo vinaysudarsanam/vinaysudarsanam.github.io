@@ -16,15 +16,15 @@ nameButton.addEventListener('click', handleNameClick)
 function handleHomeClick() {
     window.location.href = "index.html";
 }
-// Projects page 
+
 function handleProjectsClick() {
     window.location.href = "projects.html";
 }
-// Linkedin Link 
+
 function handleLinkedinClick() {
     window.open("https://www.linkedin.com/in/vinay-sudarsanam-182696169/", '_blank');
 }
-// Email 
+
 function handleContactClick() {
   var mailtoLink = 'mailto:vinay.sudarsanam.2004@gmail.com';
   window.open(mailtoLink);
@@ -35,3 +35,15 @@ function handleNameClick() {
     window.location.href = "index.html";
 }
 
+function toggleText(projectId) {
+    var project = document.getElementById(projectId);
+    var text = project.querySelector('.text');
+    var button = project.querySelector('.expand-button');
+    if (text.style.display === 'none') {
+        text.style.display = 'block';
+        button.style.display = 'block';
+    } else {
+        text.style.display = 'none';
+        button.style.display = 'none';
+    }
+}
