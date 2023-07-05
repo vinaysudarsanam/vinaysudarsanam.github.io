@@ -11,7 +11,7 @@ body {
 
 h1 {
     text-align: left;
-    color: #4B9CD3;
+    color: #000000;
     font-size: 2em;
     font-weight: normal;
 }
@@ -23,6 +23,7 @@ h2 {
     font-size: 1.15em;
     margin-top: 1em;
 }
+
 h4 {
     text-align: left;
     color: #000000;
@@ -81,23 +82,26 @@ h4 {
 .content-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-start;
     margin-top: 8%;
 }
 
 .text-content {
-    display: flex;
-    box-sizing: border-box;
     max-width: 50%;
-    margin-left: 5%;
+    margin-right: 5%; /* Adjust the margin as needed */
 }
 
-.image img {
-    display: flex;
-    width: 225px;
-    height: 305px;
+.second-half-text {
+    margin-top: 1em; /* Adjust the margin as needed */
 }
+
+
+.description,
+
+.description {
+    margin-right: 2%; /* Adjust the margin as needed */
+}
+
 
 .project-container {
     display: flex;
@@ -109,11 +113,12 @@ h4 {
     margin-top: 8%;
 }
 
+
 .project {
     box-sizing: border-box;
     border: 7px solid #4B9CD3;
     border-radius: 25px;
-    margin: 2%;
+    margin: 1%;
     width: 500px;
     /* min-width: 350px; */
     box-shadow: 0 0 100% #4F758B;
@@ -127,22 +132,19 @@ h4 {
 .project img {
     display: block;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 5%;
     margin-bottom: auto;
 }
 
-.project-description {
+.project .text {
+    display: none;
     text-align: center;
     padding: 10%;
-
 }
-  
-h3 {
-    text-align: center;
-    color: #333;
-    font-weight: normal;
-    font-size: 1.25em;
-    margin-top: 0em;
+
+.project .expand-button {
+    display: none;
+    margin-top: 20px;
 }
 
 .project-button {
@@ -153,19 +155,26 @@ h3 {
     border: 2px solid #4B9CD3;
     border-radius: 4px;
     text-decoration: none;
-  }
-  
-  .project-button:hover {
+}
+
+.project-button:hover {
     background-color: #37749F;
     border-color: #37749F;
-  }
+}
 
-  .button-container {
+.button-container {
     display: flex;
     justify-content: center;
     margin-top: 20px; /* Adjust the margin as needed */
 }
 
+h3 {
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+    font-size: 1.25em;
+    margin-top: 0em;
+}
   .center-image {
     display: block;
     margin: 0 auto;
@@ -176,6 +185,42 @@ h3 {
     font-size: 30px;
 }
 
-.description p {
-    font-size: 17px;
+.description-box {
+    display: flex;
+    border: 2px solid #4B9CD3;
+    background-color: #4B9CD3;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    transition: box-shadow 0.2s ease-in-out;
+    overflow: auto; /* Added to handle overflow */
 }
+
+.description {
+    flex: 1;
+}
+
+.image {
+    width: 200px;
+    margin-top: 1em;
+    margin-left: 1em; /* Added to create spacing */
+}
+
+.center-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 20px;
+
+
+  }
+  
+
+  
+
+  
