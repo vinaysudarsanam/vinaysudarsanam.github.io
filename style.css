@@ -86,17 +86,11 @@ h4 {
     margin-top: 8%;
 }
 
-.text-content {
-    max-width: 50%;
-    margin-right: 5%; /* Adjust the margin as needed */
-}
-
 .second-half-text {
     margin-top: 1em; /* Adjust the margin as needed */
 }
 
 
-.description,
 
 .description {
     margin-right: 2%; /* Adjust the margin as needed */
@@ -196,15 +190,56 @@ h3 {
     overflow: auto; /* Added to handle overflow */
 }
 
-.description {
-    flex: 1;
-}
 
+
+
+/* Add this new style for the image and description box */
 .image {
-    width: 200px;
-    margin-top: 1em;
-    margin-left: 1em; /* Added to create spacing */
-}
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .description-box {
+    display: flex; /* Use Flexbox for the description box and image */
+    flex-direction: column; /* Default: display stacked on small screens */
+  }
+  
+  /* Add media query for screen width > 768px (adjust this value as needed) */
+  @media (min-width: 769px) {
+    .content-container {
+      display: grid; /* Use CSS Grid for the main content container on larger screens */
+      grid-template-columns: 1fr 1fr; /* Two columns for image and description */
+      grid-gap: 20px; /* Add gap between the columns */
+      align-items: flex-start; /* Align items to the top */
+    }
+  
+    .image {
+      order: 2; /* Reorder the image to appear second */
+      max-width: 100%; /* Allow the image to take full width on larger screens */
+      margin-bottom: 0; /* Remove the margin at the bottom */
+    }
+  }
+  
+  /* Add media query for screen width <= 768px (adjust this value as needed) */
+  @media (max-width: 768px) {
+    .content-container {
+      display: flex; /* Use Flexbox for the main content container on smaller screens */
+      flex-direction: column-reverse; /* Reverse the order of content for better layout */
+    }
+  
+    .image {
+      max-width: 100%; /* Allow the image to take full width on smaller screens */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
 
 .center-button {
     display: block;
@@ -216,11 +251,25 @@ h3 {
     border-radius: 4px;
     text-decoration: none;
     padding: 10px 20px;
-
-
   }
   
+  .bottom-text {
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+    font-size: 1.05em;
+    margin-top: 0em;
+    justify-content: center;
 
-  
+}
 
-  
+.bottom-text-box {
+    display: flex;
+    border: 2px solid #D3D3D3;
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    padding: 0.1em 1em;
+    margin: 1em 0;
+    transition: box-shadow 0.2s ease-in-out;
+    overflow: auto; /* Added to handle overflow */
+}
