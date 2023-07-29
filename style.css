@@ -9,6 +9,22 @@ body {
     width: 90%;
 }
 
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 8%;
+    width: 100%; /* Set the content container to take up the full width of the screen */
+    max-width: 1200px; /* Add a maximum width to avoid excessive stretching on very large screens */
+    margin: 0 auto; /* Center the content container horizontally on the page */
+}
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 8%;
+}
+
 h1 {
     text-align: left;
     color: #000000;
@@ -77,13 +93,6 @@ h4 {
 .header button {
     font-weight: normal;
     white-space: nowrap;
-}
-
-.content-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 8%;
 }
 
 .second-half-text {
@@ -207,7 +216,7 @@ h3 {
   
   /* Add media query for screen width > 768px (adjust this value as needed) */
   @media (min-width: 769px) {
-    .content-container {
+    .intro-container {
       display: grid; /* Use CSS Grid for the main content container on larger screens */
       grid-template-columns: 1fr 1fr; /* Two columns for image and description */
       grid-gap: 20px; /* Add gap between the columns */
@@ -223,7 +232,7 @@ h3 {
   
   /* Add media query for screen width <= 768px (adjust this value as needed) */
   @media (max-width: 768px) {
-    .content-container {
+    .intro-container {
       display: flex; /* Use Flexbox for the main content container on smaller screens */
       flex-direction: column-reverse; /* Reverse the order of content for better layout */
     }
