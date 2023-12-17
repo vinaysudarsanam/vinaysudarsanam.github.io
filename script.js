@@ -1,5 +1,3 @@
-<a href="docs/vinaysudarsanam.github.io/index.html">Link Text</a>
-
 // Get references to the buttons
 const homeButton = document.getElementById('home-button');
 const projectsButton = document.getElementById('projects-button');
