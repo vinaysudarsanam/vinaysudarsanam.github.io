@@ -35,7 +35,7 @@ function handleNameClick() {
 }
 
 //Disappearing text box when clicked
-function hideDisTextBox(element) {
+function hideTextBox(element) {
     element.style.display = 'none';
 }
 
