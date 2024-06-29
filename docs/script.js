@@ -51,3 +51,15 @@ function toggleText(projectId) {
         button.style.display = 'none';
     }
 }
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const disTextBox = document.querySelector('.dis-text-box');
+        
+        if (disTextBox) {
+            disTextBox.addEventListener('click', function() {
+                disTextBox.style.display = 'none';
+            });
+        }
+    });
+</script>
