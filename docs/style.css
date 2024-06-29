@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Average&display=swap');
+
 body {
     background: #FFFCF8;
     font-family: "Average";
@@ -18,6 +19,7 @@ body {
     max-width: 1200px; /* Add a maximum width to avoid excessive stretching on very large screens */
     margin: 0 auto; /* Center the content container horizontally on the page */
 }
+
 .content-container {
     display: flex;
     justify-content: center;
@@ -67,12 +69,12 @@ h4 {
     padding: 0.5em 1em; /* Adjust the padding as needed */
     margin: 1em 0;
     transition: box-shadow 0.2s ease-in-out;
-  }
-  
-  /* Add hover style for when the box is tapped */
-  .description-box:hover {
+}
+
+/* Add hover style for when the box is tapped */
+.description-box:hover {
     box-shadow: 0 0 5px rgba(75, 156, 211, 0.7);
-  }
+}
 
 .nav-container {
     display: flex;
@@ -111,12 +113,9 @@ h4 {
     margin-top: 1em; /* Adjust the margin as needed */
 }
 
-
-
 .description {
     margin-right: 2%; /* Adjust the margin as needed */
 }
-
 
 .project-container {
     display: flex;
@@ -127,7 +126,6 @@ h4 {
     width: 90%;
     margin-top: 8%;
 }
-
 
 .project {
     box-sizing: border-box;
@@ -190,13 +188,13 @@ h3 {
     font-size: 1.25em;
     margin-top: 0em;
 }
-  .center-image {
+
+.center-image {
     display: block;
     margin: 0 auto;
-  }
+}
 
-
-  .header-text {
+.header-text {
     font-size: 30px;
 }
 
@@ -211,56 +209,45 @@ h3 {
     overflow: auto; /* Added to handle overflow */
 }
 
-
-
-
 /* Add this new style for the image and description box */
 .image {
     display: block;
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .description-box {
+}
+
+.description-box {
     display: flex; /* Use Flexbox for the description box and image */
     flex-direction: column; /* Default: display stacked on small screens */
-  }
-  
-  /* Add media query for screen width > 768px (adjust this value as needed) */
-  @media (min-width: 769px) {
+}
+
+/* Add media query for screen width > 768px (adjust this value as needed) */
+@media (min-width: 769px) {
     .intro-container {
-      display: grid; /* Use CSS Grid for the main content container on larger screens */
-      grid-template-columns: 1fr 1fr; /* Two columns for image and description */
-      grid-gap: 20px; /* Add gap between the columns */
-      align-items: flex-start; /* Align items to the top */
+        display: grid; /* Use CSS Grid for the main content container on larger screens */
+        grid-template-columns: 1fr 1fr; /* Two columns for image and description */
+        grid-gap: 20px; /* Add gap between the columns */
+        align-items: flex-start; /* Align items to the top */
     }
-  
+
     .image {
-      order: 2; /* Reorder the image to appear second */
-      max-width: 100%; /* Allow the image to take full width on larger screens */
-      margin-bottom: 0; /* Remove the margin at the bottom */
+        order: 2; /* Reorder the image to appear second */
+        max-width: 100%; /* Allow the image to take full width on larger screens */
+        margin-bottom: 0; /* Remove the margin at the bottom */
     }
-  }
-  
-  /* Add media query for screen width <= 768px (adjust this value as needed) */
-  @media (max-width: 768px) {
+}
+
+/* Add media query for screen width <= 768px (adjust this value as needed) */
+@media (max-width: 768px) {
     .intro-container {
-      display: flex; /* Use Flexbox for the main content container on smaller screens */
-      flex-direction: column-reverse; /* Reverse the order of content for better layout */
+        display: flex; /* Use Flexbox for the main content container on smaller screens */
+        flex-direction: column-reverse; /* Reverse the order of content for better layout */
     }
-  
+
     .image {
-      max-width: 100%; /* Allow the image to take full width on smaller screens */
+        max-width: 100%; /* Allow the image to take full width on smaller screens */
     }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
+}
 
 .center-button {
     display: block;
@@ -272,16 +259,15 @@ h3 {
     border-radius: 4px;
     text-decoration: none;
     padding: 10px 20px;
-  }
-  
-  .bottom-text {
+}
+
+.bottom-text {
     text-align: center;
     color: #333;
     font-weight: normal;
     font-size: 1.05em;
     margin-top: 0em;
     justify-content: center;
-
 }
 
 .bottom-text-box {
