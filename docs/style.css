@@ -51,7 +51,7 @@ h4 {
 }
 
 .dis-text-box {
-    position: fixed; /* Use fixed positioning to keep it in the viewport */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
