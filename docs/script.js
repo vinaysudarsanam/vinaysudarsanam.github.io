@@ -34,6 +34,11 @@ function handleNameClick() {
     window.location.href = "index.html";
 }
 
+//Disappearing text box when clicked
+function hideDisTextBox(element) {
+    element.style.display = 'none';
+}
+
 function toggleText(projectId) {
     var project = document.getElementById(projectId);
     var text = project.querySelector('.text');
