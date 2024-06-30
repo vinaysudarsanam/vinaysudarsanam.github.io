@@ -65,6 +65,15 @@ h4 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
+.second-half-text {
+    display: inline-block;
+    border: 2px solid #E5E4E2;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
 .description-box {
     display: inline-block;
     border: 2px solid #4B9CD3;
