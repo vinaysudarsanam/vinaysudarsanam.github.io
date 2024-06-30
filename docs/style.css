@@ -129,17 +129,14 @@ h4 {
 }
 
 .center-button {
+    padding: 0;
+    border: none;
     justify-content: center;
-    padding: 10px 20px;
-    background-color: #FFFFFF; /* White background */
-    color: #000000; /* Black text */
-    border: 2px solid #000000; /* Black border */
+    background: #FFFFFF;
     font-family: "Average";
     font-size: 1.35em;
-    border-radius: 4px;
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
-    cursor: pointer; /* Pointer cursor */
+    color: #000000;
+    cursor: pointer;
 }
 
 .center-button:hover {
