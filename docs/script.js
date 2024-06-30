@@ -19,9 +19,13 @@ function handleProjectsClick() {
     window.location.href = "projects.html";
 }
 
+function handleLinkedinClick() {
+    window.open("https://www.linkedin.com/in/vinay-sudarsanam-182696169/", '_blank');
+}
+
 function handleContactClick() {
     var mailtoLink = 'mailto:vinaysud@unc.edu';
-    window.location.href = mailtoLink;
+    window.open(mailtoLink);
 }
 
 // Redirect to the home page
@@ -36,21 +40,4 @@ function hideTextBox(element) {
 
 function toggleText(projectId) {
     var project = document.getElementById(projectId);
-    var text = project.querySelector('.text');
-    if (text.style.display === 'none' || text.style.display === '') {
-        text.style.display = 'block';
-    } else {
-        text.style.display = 'none';
-    }
-}
-
-// Ensure the text box disappears when clicked
-document.addEventListener("DOMContentLoaded", function() {
-    const disTextBox = document.querySelector('.dis-text-box');
-    
-    if (disTextBox) {
-        disTextBox.addEventListener('click', function() {
-            disTextBox.style.display = 'none';
-        });
-    }
-});
+   
