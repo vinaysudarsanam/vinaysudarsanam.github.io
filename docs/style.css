@@ -266,6 +266,9 @@ h3 {
     }
   
     .image {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       order: 2; /* Reorder the image to appear second */
       max-width: 100%; /* Allow the image to take full width on larger screens */
       margin-top: 0; /* Remove the margin at
