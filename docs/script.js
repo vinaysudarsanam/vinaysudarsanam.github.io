@@ -39,16 +39,16 @@ function toggleText(projectId) {
     var text = project.querySelector('.text');
     var button = project.querySelector('.expand-button');
     
-    if (text.style.display === 'none') {
-        text.style.display = 'block';
-        button.style.display = 'none';
-    } else {
+    if (text.style.display === 'block') {
         text.style.display = 'none';
-        button.style.display = 'block';
+        button.textContent = 'Show More';
+    } else {
+        text.style.display = 'block';
+        button.textContent = 'Show Less';
     }
 }
 
-// Example usage for toggling project text
+// Add event listeners to project containers
 document.querySelectorAll('.project').forEach(project => {
     project.addEventListener('click', () => {
         toggleText(project.id);
