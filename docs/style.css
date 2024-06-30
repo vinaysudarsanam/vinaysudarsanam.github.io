@@ -210,23 +210,20 @@ h3 {
     overflow: auto; /* Added to handle overflow */
 }
 
-
-
-
 /* Add this new style for the image and description box */
 .image {
     display: block;
     text-align: center;
     margin-bottom: 20px;
-  }
+}
   
-  .description-box {
+.description-box {
     display: flex; /* Use Flexbox for the description box and image */
     flex-direction: column; /* Default: display stacked on small screens */
-  }
+}
   
-  /* Add media query for screen width > 768px (adjust this value as needed) */
-  @media (min-width: 769px) {
+/* Add media query for screen width > 768px (adjust this value as needed) */
+@media (min-width: 769px) {
     .intro-container {
       display: grid; /* Use CSS Grid for the main content container on larger screens */
       grid-template-columns: 1fr 1fr; /* Two columns for image and description */
@@ -237,52 +234,4 @@ h3 {
     .image {
       order: 2; /* Reorder the image to appear second */
       max-width: 100%; /* Allow the image to take full width on larger screens */
-      margin-bottom: 0; /* Remove the margin at the bottom */
-    }
-  }
-  
-  /* Add media query for screen width <= 768px (adjust this value as needed) */
-  @media (max-width: 768px) {
-    .intro-container {
-      display: flex; /* Use Flexbox for the main content container on smaller screens */
-      flex-direction: column-reverse; /* Reverse the order of content for better layout */
-    }
-  
-    .image {
-      max-width: 100%; /* Allow the image to take full width on smaller screens */
-    }
-  }
-
-
-.center-button {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #000000;
-    color: #FFFFFF;
-    border: 2px solid #000000;
-    border-radius: 4px;
-    text-decoration: none;
-    padding: 10px 20px;
-  }
-  
-  .bottom-text {
-    text-align: center;
-    color: #333;
-    font-weight: normal;
-    font-size: 1.05em;
-    margin-top: 0em;
-    justify-content: center;
-
-}
-
-.bottom-text-box {
-    display: flex;
-    border: 2px solid #D3D3D3;
-    background-color: #D3D3D3;
-    border-radius: 10px;
-    padding: 0.1em 1em;
-    margin: 1em 0;
-    transition: box-shadow 0.2s ease-in-out;
-    overflow: auto; /* Added to handle overflow */
-}
+      margin-bottom: 0; /* Remove the margin at
