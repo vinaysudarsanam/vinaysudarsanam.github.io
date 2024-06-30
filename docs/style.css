@@ -129,7 +129,7 @@ h4 {
 }
 
 .center-button {
-    padding: 0;
+    padding: 10%;
     border: none;
     justify-content: center;
     background: #FFFFFF;
@@ -137,11 +137,6 @@ h4 {
     font-size: 1.35em;
     color: #000000;
     cursor: pointer;
-}
-
-.center-button:hover {
-    color: #FFFFFF; /* White text on hover */
-    border-color: #FFFFFF; /* White border on hover */
 }
 
 .second-half-text {
