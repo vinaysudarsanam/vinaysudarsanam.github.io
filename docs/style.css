@@ -129,7 +129,7 @@ h4 {
 }
 
 .center-button {
-    display: inline-block;
+    justify-content: center;
     padding: 10px 20px;
     background-color: #FFFFFF; /* White background */
     color: #000000; /* Black text */
