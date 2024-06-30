@@ -244,16 +244,16 @@ h3 {
     overflow: auto; /* Added to handle overflow */
 }
 
-/* Add this new style for the image and description box */
-.image {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-}
-  
 .description-box {
     display: flex; /* Use Flexbox for the description box and image */
     flex-direction: column; /* Default: display stacked on small screens */
+}
+
+/* Add this new style for the image and description box */
+.image {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
 }
   
 /* Add media query for screen width > 768px (adjust this value as needed) */
@@ -268,4 +268,4 @@ h3 {
     .image {
       order: 2; /* Reorder the image to appear second */
       max-width: 100%; /* Allow the image to take full width on larger screens */
-      margin-bottom: 0; /* Remove the margin at
+      margin-top: 0; /* Remove the margin at
