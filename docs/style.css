@@ -157,8 +157,10 @@ h4 {
 }
 
 .project .expand-button {
-    display: none;
+    text-align: center;
     margin-top: 20px;
+    cursor: pointer;
+    color: #4B9CD3;
 }
 
 .project-button {
@@ -170,7 +172,9 @@ h4 {
     border-radius: 4px;
     text-decoration: none;
 }
-
+.project .expand-button:hover {
+    text-decoration: underline;
+}
 .project-button:hover {
     background-color: #37749F;
     border-color: #37749F;
