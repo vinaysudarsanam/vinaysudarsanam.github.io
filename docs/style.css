@@ -15,9 +15,9 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-top: 8%;
-    width: 100%; /* Set the content container to take up the full width of the screen */
-    max-width: 1200px; /* Add a maximum width to avoid excessive stretching on very large screens */
-    margin: 0 auto; /* Center the content container horizontally on the page */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .content-container {
@@ -57,22 +57,23 @@ h4 {
     transform: translate(-50%, -50%);
     background-color: #fff;
     border: 1px solid #000;
-    padding: 10px;
+    padding: 20px;
     z-index: 1000;
     cursor: pointer;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-
 
 .description-box {
     display: inline-block;
     border: 2px solid #4B9CD3;
-    border-radius: 10px; /* To make the box round */
-    padding: 0.5em 1em; /* Adjust the padding as needed */
+    border-radius: 10px;
+    padding: 0.5em 1em;
     margin: 1em 0;
     transition: box-shadow 0.2s ease-in-out;
 }
 
-/* Add hover style for when the box is tapped */
 .description-box:hover {
     box-shadow: 0 0 5px rgba(75, 156, 211, 0.7);
 }
@@ -102,7 +103,7 @@ h4 {
 }
 
 .top-buttons button:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .header button {
@@ -111,11 +112,11 @@ h4 {
 }
 
 .second-half-text {
-    margin-top: 1em; /* Adjust the margin as needed */
+    margin-top: 1em;
 }
 
 .description {
-    margin-right: 2%; /* Adjust the margin as needed */
+    margin-right: 2%;
 }
 
 .project-container {
@@ -134,7 +135,6 @@ h4 {
     border-radius: 25px;
     margin: 1%;
     width: 500px;
-    /* min-width: 350px; */
     box-shadow: 0 0 100% #4F758B;
     transition: box-shadow 0.2s ease-in-out;
 }
@@ -179,7 +179,7 @@ h4 {
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 20px;
 }
 
 h3 {
@@ -202,82 +202,4 @@ h3 {
 .description-box {
     display: flex;
     border: 2px solid #4B9CD3;
-    background-color: #4B9CD3;
-    border-radius: 10px;
-    padding: 0.5em 1em;
-    margin: 1em 0;
-    transition: box-shadow 0.2s ease-in-out;
-    overflow: auto; /* Added to handle overflow */
-}
-
-/* Add this new style for the image and description box */
-.image {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.description-box {
-    display: flex; /* Use Flexbox for the description box and image */
-    flex-direction: column; /* Default: display stacked on small screens */
-}
-
-/* Add media query for screen width > 768px (adjust this value as needed) */
-@media (min-width: 769px) {
-    .intro-container {
-        display: grid; /* Use CSS Grid for the main content container on larger screens */
-        grid-template-columns: 1fr 1fr; /* Two columns for image and description */
-        grid-gap: 20px; /* Add gap between the columns */
-        align-items: flex-start; /* Align items to the top */
-    }
-
-    .image {
-        order: 2; /* Reorder the image to appear second */
-        max-width: 100%; /* Allow the image to take full width on larger screens */
-        margin-bottom: 0; /* Remove the margin at the bottom */
-    }
-}
-
-/* Add media query for screen width <= 768px (adjust this value as needed) */
-@media (max-width: 768px) {
-    .intro-container {
-        display: flex; /* Use Flexbox for the main content container on smaller screens */
-        flex-direction: column-reverse; /* Reverse the order of content for better layout */
-    }
-
-    .image {
-        max-width: 100%; /* Allow the image to take full width on smaller screens */
-    }
-}
-
-.center-button {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #000000;
-    color: #FFFFFF;
-    border: 2px solid #000000;
-    border-radius: 4px;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-.bottom-text {
-    text-align: center;
-    color: #333;
-    font-weight: normal;
-    font-size: 1.05em;
-    margin-top: 0em;
-    justify-content: center;
-}
-
-.bottom-text-box {
-    display: flex;
-    border: 2px solid #D3D3D3;
-    background-color: #D3D3D3;
-    border-radius: 10px;
-    padding: 0.1em 1em;
-    margin: 1em 0;
-    transition: box-shadow 0.2s ease-in-out;
-    overflow: auto; /* Added to handle overflow */
-}
+    background-color: #4B9CD
