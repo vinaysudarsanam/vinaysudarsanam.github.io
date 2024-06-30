@@ -19,13 +19,9 @@ function handleProjectsClick() {
     window.location.href = "projects.html";
 }
 
-function handleLinkedinClick() {
-    window.open("https://www.linkedin.com/in/vinay-sudarsanam-182696169/", '_blank');
-}
-
 function handleContactClick() {
     var mailtoLink = 'mailto:vinaysud@unc.edu';
-    window.open(mailtoLink);
+    window.location.href = mailtoLink;
 }
 
 // Redirect to the home page
@@ -41,13 +37,10 @@ function hideTextBox(element) {
 function toggleText(projectId) {
     var project = document.getElementById(projectId);
     var text = project.querySelector('.text');
-    var button = project.querySelector('.expand-button');
     if (text.style.display === 'none' || text.style.display === '') {
         text.style.display = 'block';
-        button.style.display = 'block';
     } else {
         text.style.display = 'none';
-        button.style.display = 'none';
     }
 }
 
