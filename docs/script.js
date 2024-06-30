@@ -8,7 +8,7 @@ const nameButton = document.getElementById('name-button');
 homeButton.addEventListener('click', handleHomeClick);
 projectsButton.addEventListener('click', handleProjectsClick);
 contactButton.addEventListener('click', handleContactClick);
-nameButton.addEventListener('click', handleNameClick)
+nameButton.addEventListener('click', handleNameClick);
 
 // Redirect to the home page
 function handleHomeClick() {
@@ -25,8 +25,7 @@ function handleLinkedinClick() {
 
 function handleContactClick() {
     var mailtoLink = 'mailto:vinaysud@unc.edu';
-   window.open(mailtoLink);
-
+    window.open(mailtoLink);
 }
 
 // Redirect to the home page
@@ -34,7 +33,7 @@ function handleNameClick() {
     window.location.href = "index.html";
 }
 
-//Disappearing text box when clicked
+// Disappearing text box when clicked
 function hideTextBox(element) {
     element.style.display = 'none';
 }
@@ -43,7 +42,7 @@ function toggleText(projectId) {
     var project = document.getElementById(projectId);
     var text = project.querySelector('.text');
     var button = project.querySelector('.expand-button');
-    if (text.style.display === 'none') {
+    if (text.style.display === 'none' || text.style.display === '') {
         text.style.display = 'block';
         button.style.display = 'block';
     } else {
@@ -52,14 +51,13 @@ function toggleText(projectId) {
     }
 }
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const disTextBox = document.querySelector('.dis-text-box');
-        
-        if (disTextBox) {
-            disTextBox.addEventListener('click', function() {
-                disTextBox.style.display = 'none';
-            });
-        }
-    });
-</script>
+// Ensure the text box disappears when clicked
+document.addEventListener("DOMContentLoaded", function() {
+    const disTextBox = document.querySelector('.dis-text-box');
+    
+    if (disTextBox) {
+        disTextBox.addEventListener('click', function() {
+            disTextBox.style.display = 'none';
+        });
+    }
+});
