@@ -129,9 +129,21 @@ h4 {
 }
 
 .center-button {
-    font-weight: bold;
-    color: #000000;
-    white-space: nowrap;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFFFFF; /* White background */
+    color: #000000; /* Black text */
+    border: 2px solid #000000; /* Black border */
+    border-radius: 4px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.center-button:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #FFFFFF; /* White text on hover */
+    border-color: #FFFFFF; /* White border on hover */
 }
 
 .second-half-text {
